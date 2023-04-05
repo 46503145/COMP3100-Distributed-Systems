@@ -7,8 +7,8 @@ import java.net.Socket;
 
 import java.util.concurrent.TimeUnit;
 
-public class TCPServer{
-    public static void main(String[] args) throws IOException {
+public class TCPServer{}
+    /*public static void main(String[] args) throws IOException {
         int aPort = Integer.parseInt(args[0]);
         System.out.println("Port Number: "+ aPort);
         ServerSocket ss = new ServerSocket(aPort);
@@ -41,4 +41,4 @@ public class TCPServer{
         catch(Exception e){System.out.println(e);}
     }
     }
-}
+}*/

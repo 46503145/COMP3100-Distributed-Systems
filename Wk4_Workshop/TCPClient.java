@@ -9,11 +9,11 @@ public class TCPClient{
     public static void main(String[] args){
         while(true){
             try{
-                //InetAddress aHost = InetAddress.getByName(args[0]);
-                //int aPort = Integer.ParseINt(args[1]);
-                //Socket s = new Socket(aHost, aPort);
+                InetAddress aHost = InetAddress.getByName(args[0]);
+                int aPort = Integer.ParseINt(args[1]);
+                Socket s = new Socket(aHost, aPort);
 
-                Socket s = new Socket("127.0.0.1", 50000);
+                //Socket s = new Socket("127.0.0.1", 50000);
 
                 DataOutputStream dout = new DataOutputStream(s.getOutputStream());
 
@@ -26,14 +26,14 @@ public class TCPClient{
                 
                 //try{TimeUnit.SECONDS.sleep(10);}catch(InterruptedException e){System.out.println(e);}
 
-                dout.write("HELO\n".getBytes());
+                dout.write(("HELO"+"\n").getBytes());
                 dout.flush();
                 System.out.println("SENT: HELO");
 
                 String str = din.readLine();
                 System.out.println("RCVD: "+str);
                 
-                dout.write(("AUTH hahaha\n").getBytes());
+                dout.write(("AUTH 46503145"+ "\n").getBytes());
                 dout.flush();
                 System.out.println("SENT: AUTH");
 
