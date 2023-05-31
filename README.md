@@ -1,1 +1,1 @@
-Week 3, 4, 5 and 6's workshops are finished. Stage 1 has been completed.
+Workshops from week 1 to week 12 has been finished. Both are The COMP3100 Stage 1 and 2 have been completed.
